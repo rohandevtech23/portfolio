@@ -1,0 +1,150 @@
+.education-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: var(--cWidth);
+  max-width: var(--cMaxWidth);
+  margin: auto;
+  padding: 100px 0px;
+  box-sizing: border-box;
+}
+
+.education-container {
+  width: 100%;
+}
+
+.education-section h2 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  text-align: center;
+  background: linear-gradient(0deg, #7f40ff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.education-section h2 > span {
+  font-family: "Geist", sans-serif;
+  font-weight: 300;
+}
+
+.education-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.education-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.education-table th {
+  padding: 24px 30px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accentColor);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+}
+
+.education-table td {
+  padding: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  vertical-align: middle;
+}
+
+.education-row {
+  transition: background-color 0.3s ease;
+}
+
+.education-row:hover {
+  background-color: rgba(170, 66, 255, 0.06);
+}
+
+.education-row:last-child td {
+  border-bottom: none;
+}
+
+.education-course h4 {
+  margin: 8px 0 4px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.education-course p {
+  margin: 0;
+  font-size: 13px;
+  color: #9c9ba3;
+  line-height: 18px;
+}
+
+.education-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: rgba(127, 64, 255, 0.2);
+  color: #c481ff;
+  border: 1px solid rgba(196, 129, 255, 0.3);
+}
+
+.education-inst {
+  font-size: 18px;
+  font-weight: 500;
+  color: #e2e1e7;
+}
+
+.education-year {
+  font-size: 16px;
+  color: #a4a2b0;
+  white-space: nowrap;
+}
+
+.score-pill {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 900px) {
+  .education-section h2 {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 40px;
+  }
+  .education-table th,
+  .education-table td {
+    padding: 18px 20px;
+  }
+  .education-course h4 {
+    font-size: 18px;
+  }
+  .education-inst {
+    font-size: 15px;
+  }
+}

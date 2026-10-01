@@ -7,10 +7,14 @@
   color: var(--accentColor);
 }
 .work-section {
-  transition: 0s;
+  position: relative;
+  background-color: var(--backgroundColor);
+  overflow: hidden;
   height: 100vh;
   box-sizing: border-box;
   will-change: transform;
+  z-index: 10;
+  margin-bottom: 80px;
 }
 .work-container {
   margin: auto;
@@ -44,7 +48,7 @@
 .work-flex::before,
 .work-flex::after {
   content: "";
-  width: calc(50000vw);
+  width: 100vw;
   height: 1px;
   background-color: #363636;
   position: absolute;

@@ -25,7 +25,7 @@ const WhatIDo = () => {
     };
   }, []);
   return (
-    <div className="whatIDO">
+    <div className="whatIDO" id="skills">
       <div className="what-box">
         <h2 className="title">
           W<span className="hat-h2">HAT</span>
@@ -87,24 +87,23 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>DEVELOP</h3>
-              <h4>Description</h4>
+              <h3>AI & ML</h3>
+              <h4>Data Science & Intelligent Systems</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae.
+                Architecting end-to-end RAG pipelines, LLM-powered semantic search engines, and advanced machine learning models with sub-200ms latency and 95%+ accuracy.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">TypeScript</div>
-                <div className="what-tags">Three.js</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Css</div>
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Next.js</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">PHP</div>
-                <div className="what-tags">MySql</div>
+                <div className="what-tags">Python</div>
+                <div className="what-tags">LangChain</div>
+                <div className="what-tags">RAG</div>
+                <div className="what-tags">ChromaDB</div>
+                <div className="what-tags">LLMs</div>
+                <div className="what-tags">OpenAI API</div>
+                <div className="what-tags">Whisper API</div>
+                <div className="what-tags">Pandas</div>
+                <div className="what-tags">NumPy</div>
+                <div className="what-tags">Prompt Eng.</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -128,22 +127,24 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>DESIGN</h3>
-              <h4>Description</h4>
+              <h3>ANALYTICS</h3>
+              <h4>Data Pipelines & Business Intelligence</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae
+                Developing scalable backend data pipelines, optimizing relational SQL databases, and engineering interactive Power BI dashboards that accelerate business decision-making.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Blender</div>
-                <div className="what-tags">Zbrush</div>
-                <div className="what-tags">UI Design</div>
-                <div className="what-tags">Motion</div>
-                <div className="what-tags">Rigging</div>
-                <div className="what-tags">3D Animation</div>
-                <div className="what-tags">Character Design</div>
-                <div className="what-tags">Modelling</div>
+                <div className="what-tags">SQL</div>
+                <div className="what-tags">PostgreSQL</div>
+                <div className="what-tags">MySQL</div>
+                <div className="what-tags">FastAPI</div>
+                <div className="what-tags">Power BI</div>
+                <div className="what-tags">DAX</div>
+                <div className="what-tags">Matplotlib</div>
+                <div className="what-tags">Seaborn</div>
+                <div className="what-tags">Next.js</div>
+                <div className="what-tags">Laravel</div>
+                <div className="what-tags">PHP</div>
               </div>
               <div className="what-arrow"></div>
             </div>

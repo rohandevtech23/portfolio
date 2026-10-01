@@ -30,9 +30,10 @@ const Scene = () => {
       const renderer = new THREE.WebGLRenderer({
         alpha: true,
         antialias: true,
+        powerPreference: "high-performance",
       });
       renderer.setSize(container.width, container.height);
-      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.setPixelRatio(1);
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
       renderer.toneMappingExposure = 1;
       canvasDiv.current.appendChild(renderer.domElement);
@@ -106,8 +107,15 @@ const Scene = () => {
         landingDiv.addEventListener("touchstart", onTouchStart);
         landingDiv.addEventListener("touchend", onTouchEnd);
       }
+      let isVisible = true;
+      const onScrollCheck = () => {
+        isVisible = window.scrollY < window.innerHeight * 2.5;
+      };
+      window.addEventListener("scroll", onScrollCheck, { passive: true });
+
       const animate = () => {
         requestAnimationFrame(animate);
+        if (!isVisible) return;
         if (headBone) {
           handleHeadRotation(
             headBone,
@@ -127,6 +135,7 @@ const Scene = () => {
       };
       animate();
       return () => {
+        window.removeEventListener("scroll", onScrollCheck);
         clearTimeout(debounce);
         scene.clear();
         renderer.dispose();

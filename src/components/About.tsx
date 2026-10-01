@@ -6,9 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-          dolores numquam iusto Ratione earum ducimus autem id iure pariatur
-          dolorum quae maiores.
+          Data Scientist with 3+ years of experience bridging backend engineering and advanced analytics. Proficient in Python, SQL, statistical data modeling, Exploratory Data Analysis, and machine learning applications. Specialized in building scalable backend data pipelines, relational data architectures, and interactive analytical dashboards. Currently pursuing an M.S. in Computer Science focusing on Machine Learning and Data Science.
         </p>
       </div>
     </div>
