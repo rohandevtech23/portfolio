@@ -35,12 +35,12 @@
 .what-box-in {
   flex-direction: column;
   height: 500px;
-  margin-left: 200px;
+  margin-left: 20px;
   position: relative;
   display: none;
 }
 .what-content {
-  width: 450px;
+  width: 420px;
   height: 33%;
   min-height: 50%;
   transition: 0.5s;

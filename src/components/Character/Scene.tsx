@@ -107,15 +107,8 @@ const Scene = () => {
         landingDiv.addEventListener("touchstart", onTouchStart);
         landingDiv.addEventListener("touchend", onTouchEnd);
       }
-      let isVisible = true;
-      const onScrollCheck = () => {
-        isVisible = window.scrollY < window.innerHeight * 2.5;
-      };
-      window.addEventListener("scroll", onScrollCheck, { passive: true });
-
       const animate = () => {
         requestAnimationFrame(animate);
-        if (!isVisible) return;
         if (headBone) {
           handleHeadRotation(
             headBone,
@@ -135,7 +128,6 @@ const Scene = () => {
       };
       animate();
       return () => {
-        window.removeEventListener("scroll", onScrollCheck);
         clearTimeout(debounce);
         scene.clear();
         renderer.dispose();
